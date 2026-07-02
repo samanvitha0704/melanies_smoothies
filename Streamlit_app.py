@@ -20,7 +20,7 @@ name_on_order = st.text_input('Name on Smoothie:')
 
 #session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col("Fruit_Name"),col('search_on'))
-st.dataframe(data=my_dataframe,use_container_width=True)
+#st.dataframe(data=my_dataframe,use_container_width=True)
 #st.stop()
 pd_df=my_dataframe.to_pandas()
 #st.dataframe(pd_df)
